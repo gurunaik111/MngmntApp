@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notice"
+        android:enabled="true"
+        android:title="NOTIFY"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_dashboard_black_24dp" />
+    <item
+        android:id="@+id/Calendar"
+        android:enabled="true"
+        android:title="CALENDAR"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_home_black_24dp"
+        />
+    <item
+        android:id="@+id/classNotice"
+        android:enabled="true"
+        android:title="Write To School"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        />
+</menu>
