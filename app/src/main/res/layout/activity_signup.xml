@@ -1,46 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="20dp"
     android:paddingEnd="10dp"
-    android:paddingStart="10dp"
-    android:background="@color/red"
     android:paddingTop="20dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.guru.managmentapp.Signup">
 
     <EditText
-        android:id="@+id/schoolName"
+        android:id="@+id/editText"
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content"
-        android:cursorVisible="true"
-        android:maxLength="10"
+        android:ems="10"
         android:inputType="textPersonName"
-        android:hint="School's Name" />
+        android:hint="Enter School Name"
+        />
 
     <EditText
-        android:id="@+id/studentClass"
+        android:id="@+id/editText4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:cursorVisible="true"
-        android:maxLength="2"
-        android:hint="Class"
-        android:inputType="number" />
+        android:ems="10"
+        android:hint="Enter ID Number"
+        android:inputType="number"
+        />
+
+
 
     <EditText
-        android:id="@+id/studentDivision"
+        android:id="@+id/editText5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxLength="10"
-        android:cursorVisible="true"
-        android:inputType="textPersonName"
-        android:hint="Division" />
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Enter Password "
+         />
 
     <Button
         android:id="@+id/button_submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Submit"
-        android:onClick="onSubmitButtonClick"/>
+        android:onClick="submitButtonClicked"
+        />
+
 
 </LinearLayout>

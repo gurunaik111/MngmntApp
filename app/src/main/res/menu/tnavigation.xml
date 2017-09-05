@@ -22,4 +22,10 @@
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_notifications_black_24dp"
         />
+    <item
+        android:id="@+id/noticeStaff"
+        android:enabled="true"
+        android:title="NOTIFY STAFF"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_dashboard_black_24dp" />
 </menu>
