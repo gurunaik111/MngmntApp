@@ -30,13 +30,16 @@ public class NoticeListAdapter extends ArrayAdapter<GetNotice> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         //get info
-        String notice=getItem(position).getNotice();
+        String noticeT=getItem(position).getNoticeText();
+        String noticeN=getItem(position).getNoticeNo();
         //create  param wid info
-        GetNotice getNotice=new GetNotice(notice);
+        GetNotice getNotice=new GetNotice(noticeT,noticeN);
         LayoutInflater inflater=LayoutInflater.from(mContext);
         convertView=inflater.inflate(mResource,parent,false);
         TextView tvTxt=(TextView) convertView.findViewById(R.id.adaptertextview);
-        tvTxt.setText(notice);
+        TextView tvNO=(TextView) convertView.findViewById(R.id.deleteButtonText);
+        tvTxt.setText(noticeT);
+        tvNO.setText(noticeN);
         return convertView;
     }
 }

@@ -15,12 +15,12 @@
         android:layout_weight="20"
         android:text="ITEM LIST"
         />
-    <Button
-        android:id="@+id/deleteButton"
+    <TextView
+        android:id="@+id/deleteButtonText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Delete"
         android:layout_weight="80"
-        android:onClick="onDeleteButtonClicked"/>
+        />
 
 </LinearLayout>

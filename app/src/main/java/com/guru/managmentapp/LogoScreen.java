@@ -17,7 +17,7 @@ public class LogoScreen extends android.app.Activity {
         Animation myanim= AnimationUtils.loadAnimation(this,R.anim.mytransition);
         tv.startAnimation(myanim);
         iv.startAnimation(myanim);
-        final Intent i=new Intent(this,TConsole.class);
+        final Intent i=new Intent(this,Signup.class);
         Thread timer=new Thread(){
             public  void run(){
 

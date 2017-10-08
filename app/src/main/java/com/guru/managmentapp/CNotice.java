@@ -22,15 +22,15 @@ public class CNotice extends android.app.Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_snotice, container, false);
-        ListView mListView=(ListView)getActivity().findViewById(R.id.classnoticelist);
+        ListView mListView=(ListView)view.findViewById(R.id.classnoticelist);
         //create GetNotice Object
-        GetNotice note1=new GetNotice("holiday for day");
-        GetNotice note2=new GetNotice("holi hai");
-        GetNotice note3=new GetNotice("Coldplay");
-        GetNotice note4=new GetNotice("holi hai");
-        GetNotice note5=new GetNotice("Bruno Mars");
-        GetNotice note6=new GetNotice("holi hai");
-        GetNotice note7=new GetNotice("LP");
+        GetNotice note1=new GetNotice("holiday for day","ne1");
+        GetNotice note2=new GetNotice("holi hai","ne2");
+        GetNotice note3=new GetNotice("Coldplay","ne3");
+        GetNotice note4=new GetNotice("holi hai","ne4");
+        GetNotice note5=new GetNotice("Bruno Mars","ne5");
+        GetNotice note6=new GetNotice("holi hai","ne6");
+        GetNotice note7=new GetNotice("LP","ne7");
         //addoject to array list
         ArrayList<GetNotice> noticeList=new ArrayList<>();
         noticeList.add(note7);
