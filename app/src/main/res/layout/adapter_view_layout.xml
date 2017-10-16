@@ -3,24 +3,37 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="100">
+    android:weightSum="100"
+    tools:context="com.guru.managmentapp.CNotice">
 
-
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_weight="10">
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
         android:gravity="center"
         android:textAlignment="center"
-        android:id="@+id/adaptertextview"
-        android:layout_weight="20"
-        android:text="ITEM LIST"
+        android:id="@+id/subjectName"
+        android:text="Subject Name"
         />
     <TextView
-        android:id="@+id/deleteButtonText"
+        android:id="@+id/subjectHomework"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Delete"
-        android:layout_weight="80"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:text="homework"
         />
+    </LinearLayout>
 
+    <ImageView
+        android:paddingTop="10dp"
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_weight="90"
+        android:src="@mipmap/ic_dropdown" />
 </LinearLayout>
